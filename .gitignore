@@ -1,0 +1,17 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# OS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
