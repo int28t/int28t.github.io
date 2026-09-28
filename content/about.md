@@ -1,7 +1,7 @@
 ---
 title: "About"
 hide_date: true
-draft: true
+draft: false
 mathjax: false
 ---
 
