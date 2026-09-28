@@ -1,4 +1,12 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'int28t'
-theme = 'PaperMod'
+baseURL = 'https://int28t.github.io/'
+languageCode = 'ru-ru'
+title = 'Aleksey Grishin blog'
+
+[params]
+  description = "Software Engineer. Go Backend Developer"
+  github_username = "int28t"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
