@@ -771,16 +771,12 @@ a:visited {
         width: auto;
         margin: 0 0 15px;
     }
+}
 
-    /* Фикс для картинок из Markdown */
-    .post-content img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-        /* Сделает отступы и выровняет по центру */
-        border-radius: 4px;
-        /* Опционально: чуть скруглит углы, если хочется */
-    }
-
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
 }
