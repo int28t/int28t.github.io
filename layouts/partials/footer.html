@@ -1,0 +1,23 @@
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-col-1 column">
+            <ul>
+                <li>{{ .Site.Title }}</li>
+            </ul>
+        </div>
+        <div class="footer-col-2 column">
+            <ul>
+                {{ if .Site.Params.github_username }}
+                <li>
+                    <a href="https://github.com/{{ .Site.Params.github_username }}">
+                        <span class="username">github/{{ .Site.Params.github_username }}</span>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="footer-col-3 column">
+            <p class="text">{{ .Site.Params.description }}</p>
+        </div>
+    </div>
+</footer>

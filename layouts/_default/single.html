@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="post">
+    <header class="post-header">
+        <h1>{{ .Title }}</h1>
+
+        <!-- Если параметр hide_date НЕ равен true, показываем дату -->
+        {{ if not .Params.hide_date }}
+        <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+        {{ end }}
+
+    </header>
+    <article class="post-content">
+        {{ .Content }}
+    </article>
+
+    <!-- Опционально: поддержка формул -->
+    {{ if .Params.mathjax }}
+    <script type="text/javascript"
+        src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {{ end }}
+</div>
+{{ end }}

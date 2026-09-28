@@ -1,0 +1,12 @@
+<header class="site-header">
+    <div class="wrap">
+        <a class="site-title" href="/">{{ .Site.Title }}</a>
+        <nav class="site-nav">
+            <div class="trigger">
+                {{ range .Site.Menus.main }}
+                <a class="page-link" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </nav>
+    </div>
+</header>
